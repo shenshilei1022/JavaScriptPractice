@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="layout">
+            <table>
+                <tr>
+                    <td>起始资金</td>
+                    <td><input type="text" id="principal"> ￥</td>
+                </tr>
+                <tr>
+                    <td>每年收益</td>
+                    <td><input type="text" id="profitPerYear"> %</td>
+                </tr>
+                <tr>
+                    <td>复利年数</td>
+                    <td><input type="text" id="numberOfYears"> 年</td>
+                </tr>
+                <tr>
+                    <td>每年追加资金</td>
+                    <td><input type="text" id="appendMoney"> ￥</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" value="计算" onclick="calcProfit()"></td>
+                </tr>
+                <tr>
+                    <td>本金和</td>
+                    <td><input type="text" value="0" disabled="disabled" id="sum1"> ￥</td>
+                </tr>
+                <tr>
+                    <td>利息和</td>
+                    <td><input type="text" value="0" disabled="disabled" id="sum2"> ￥</td>
+                </tr>
+                <tr>
+                    <td>本息和</td>
+                    <td><input type="text" value="0" disabled="disabled" id="sum3"> ￥</td>
+                </tr>
+            </table>
+        </div>
+        <script src="calcProfit.js" type="text/javascript"></script>
+    </body>
+</html>

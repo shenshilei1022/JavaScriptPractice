@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+    </head>
+    <body id="parent">
+        <button onclick="dynamicJS()">动态加载js</button>
+        <button onclick="test()">动态加载js后点击才有效果</button>
+        <script>
+            function dynamicJS() {
+                // 创建script元素
+                var scriptElement = document.createElement("script");
+                // 创建属性节点
+                var src = document.createAttribute("src");
+                src.nodeValue = "practice04.js";
+                // 将属性添加到节点
+                scriptElement.setAttributeNode(src);
+
+                var body = document.getElementById("parent");
+                body.appendChild(scriptElement);
+            }
+        </script>
+    </body>
+</html>

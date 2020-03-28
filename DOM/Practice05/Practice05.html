@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+        <style>
+            div.layout {
+                margin: auto;
+                padding: 50px;
+                width: 700px;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border-style: solid;
+                border-width: 1px;
+                border-color: lightslategray;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <div>
+                <h3>1. 删除行为前的提示</h3>
+                <p>在进行删除操作前，都应该提示用户是否要删除</p>
+                <table>
+                    <tr>
+                        <td>英雄名称</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr class="tr1">
+                        <td>盖伦</td>
+                        <td><a href="#nowhere" class="tr1" onclick="deleteData(this.className)">删除</a></td>
+                    </tr>
+                    <tr class="tr2">
+                        <td>船长</td>
+                        <td><a href="#nowhere" class="tr2" onclick="deleteData(this.className)">删除</a></td>
+                    </tr>
+                    <tr class="tr3">
+                        <td>卡沙</td>
+                        <td><a href="#nowhere" class="tr3" onclick="deleteData(this.className)">删除</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>2. 验证账号密码是否为空</h3>
+                <p>比如登录的时候，如果账号或密码为空，弹出提示，并且不提交(由于还没学服务器的知识，先不写表单提交的动作。)</p>
+                账号：<input type="text" id="user"><br>
+                密码：<input type="password" id="pwd"><br>
+                <input type="button" value="登录" onclick="isEmpty()">
+            </div>
+            <div>
+                <h3>3. 提交数据，验证长度</h3>
+                <p>比如注册用户名时，用户名至少需要3位长度</p>
+                账号：<input type="text" id="account"><br>
+                <input type="button" value="注册" onclick="judgeAccountLength()">
+            </div>
+            <div>
+                <h3>4. 验证年龄是否为数字</h3>
+                <p>比如注册的时候，需要提交年龄信息，用户输入的年龄信息必须是数字的(且不能是小数)。</p>
+                账号：<input type="text"><br>
+                年龄：<input type="text" id="age"><br>
+                <input type="button" value="注册" onclick="judgeAge()">
+            </div>
+            <div>
+                <h3>5. 验证Email格式是否正确</h3>
+                Email：<input type="text" id="email"><br>
+                <input type="button" value="注册" onclick="judgeEmail()">
+            </div>
+            <div>
+                <h3>6. 隐藏和显示</h3>
+                <input type="button" value="隐藏div" onclick="hide()">
+                <input type="button" value="显示div" onclick="show()"><br>
+                <div id="closable">这是一个div</div>
+            </div>
+        </div>
+        <script src="practice05.js"></script>
+    </body>
+</html>

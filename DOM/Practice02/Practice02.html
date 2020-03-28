@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>1. 鼠标移动到不同菜单时，显示不同的下拉菜单</h3>
+        <a href="#nowhere" class="d1" onmouseover="showMenu(this.className)">武器</a>
+        <a href="#nowhere" class="d2" onmouseover="showMenu(this.className)">护甲</a>
+        <a href="#nowhere" class="d3" onmouseover="showMenu(this.className)">英雄</a>
+        <div class="d d1">
+            <a href="#nowhere">大剑</a>
+            <a href="#nowhere">屠龙</a>
+            <a href="#nowhere">倚天</a>
+            <a href="#nowhere">七孔砖</a>
+        </div>
+        <div class="d d2">
+            <a href="#nowhere">胸甲</a>
+            <a href="#nowhere">护腕</a>
+            <a href="#nowhere">头盔</a>
+            <a href="#nowhere">鞋子</a>
+        </div>
+        <div class="d d3">
+            <a href="#nowhere">盖伦</a>
+            <a href="#nowhere">提莫</a>
+            <a href="#nowhere">安妮</a>
+            <a href="#nowhere">死歌</a>
+        </div>
+
+        <div style="margin-top: 200px;">
+            <h3>2. 当用户输入用户名时，就自动验证账号是否存在</h3>
+            <input type="text" id="inputUser" oninput="checkAccount()">
+            <span style="color: lightcoral; display: none" id="noUser">账号已经存在</span>
+            <span style="color: lightgreen; display: none" id="yesUser">账号可以使用</span>
+        </div>
+
+        <div style="margin-top: 50px;">
+            <h3>3. 点击全选，选中所有复选框；点击反选，反选复选框</h3>
+            <input type="checkbox" onclick="checkClick()">全选<br>
+            <input type="checkbox" class="check">tokyo hot<br>
+            <input type="checkbox" class="check">dota<br>
+            <input type="checkbox" class="check">lol<br>
+            <input type="checkbox" class="check">wow<br>
+            <input type="checkbox" class="check">warcraft<br>
+            <input type="checkbox" class="check">diablo<br>
+            <a href="#nowhere" onclick="reverseSelect()">反选</a>
+        </div>
+        <script src="practice02.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="layout">
+            <p align="center">动态创建一个表</p>
+            id: <input type="text" id="ID">
+            名称: <input type="text" id="Name">
+            血量: <input type="text" id="HP">
+            伤害: <input type="text" id="damage"><br>
+            <center style="margin-top: 20px;"><input type="button" value="添加" onclick="addMessage()"></center>
+            <div id="dynamicTable">
+                <table>
+                    <tr>
+                        <td>id</td>
+                        <td>名称</td>
+                        <td>血量</td>
+                        <td>伤害</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="practice03.js"></script>
+    </body>
+</html>

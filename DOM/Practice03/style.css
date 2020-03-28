@@ -1,0 +1,22 @@
+div.layout {
+    margin: auto;
+    width: 550px;
+    padding: 100px;
+}
+
+input {
+    width: 80px;
+}
+
+td {
+    width: 150px;
+    text-align: center;
+}
+
+table {
+    margin-top: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgray;
+    padding-bottom: 10px;
+}

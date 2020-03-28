@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+}
+
+.d {
+    color: lightgray;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    width: 80px;
+    display: none;
+}
+
+div.d a {
+    color: #888;
+    text-decoration: none;
+    font-family: 宋体;
+    display: block;
+    padding: 10 5 10 5;
+}
+
+div.d a:hover {
+    background-color: #f1f1f1;
+}
+
+div.d1 {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+div.d2 {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+}
+
+div.d3 {
+    position: absolute;
+    left: 95px;
+    top: 80px;
+}
+

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+        <title>DOM练习01</title>
+    </head>
+    <body>
+        <div>
+            <h3>1. 验证账号是否存在：使用简单地验证规则，如果账号以a或A开头，就提示已经存在</h3>
+            <input type="text" id="inputUser">
+            <input type="button" value="验证" onclick="checkAccount()">
+            <span style="color: lightcoral; display: none" id="noUser">账号已经存在</span>
+            <span style="color: lightgreen; display: none" id="yesUser">账号可以使用</span>
+        </div>
+        <div>
+            <h3>2. 切换不同的图片</h3>
+            <input type="button" value="通过src属性切换图片1" onclick="switch1()"><br>
+            <input type="button" value="通过属性节点切换图片2" onclick="switch2()"><br>
+            <img src="0.jpg" alt="" id="img">
+        </div>
+        <div>
+            <h3>3. 判断输入框里的值是否是整数（浮点数也不行）</h3>
+            <input type="text" id="num">
+            <input type="button" value="是否是整数？" onclick="judgeInt()">
+            <span id="result"> </span>
+        </div>
+        <script src="practice01.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+div.layout {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding-top: 200px;
+}
+
+input {
+    width: 80px;
+}
