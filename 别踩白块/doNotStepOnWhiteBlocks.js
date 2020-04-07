@@ -110,10 +110,11 @@ Step.prototype.createBlock = function (flag) {
                 return;
             }
             // 未点击正确的钢琴块
-            alert("最终得分：" + self.score);
+            self.start = confirm("最终得分：" + self.score + "\n是否重新开始？");
             clearInterval(self.timer1);
             clearInterval(self.timer2);
             clearInterval(self.timer3);
+            self.startOrNot();
         });
     }
     // 生成随机数字标记钢琴块
