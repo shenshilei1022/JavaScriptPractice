@@ -1,0 +1,63 @@
+.wrapper {
+    width: 400px;
+    height: 600px;
+    margin: 200px auto;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: -150px;
+    display: none;
+}
+
+.title {
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+    color: lightseagreen;
+    border-bottom-style: dashed;
+    border-bottom-width: 4px;
+    border-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.author {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 200px;
+}
+
+.row {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    height: 149px;
+}
+
+.col, .target {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
+    height: 149px;
+    width: 99px;
+    float: left;
+}
+
+.score {
+    font-size: 30px;
+    color: darkorange;
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+    display: none;
+    font-family: SimSum, "宋体";
+}
